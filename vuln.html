@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<title>vuln.html</title>
+<h1>vuln.html</h1>
+<p>This page has a DOM-based XSS <a target="_blank" href='vuln.html#&lt;script src="exploit.js"&gt;&lt;/script&gt;'>vulnerability</a>.
+(<a href="exploit.js">exploit.js</a>)</p>
+<script type="text/javascript">
+document.write("<p>location.hash == " + location.hash + "</p>");
+</script>
